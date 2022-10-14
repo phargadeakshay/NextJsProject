@@ -11,6 +11,7 @@ for (const iterator of items) {
 }
 res.status(200).json(allData);
 
+
   // fs.readFile(`AksJson/${req.query.slug}.json`,"utf-8",(err,data)=>{
   //   if(err)
   //   {

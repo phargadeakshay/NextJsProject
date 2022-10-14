@@ -19,6 +19,7 @@ export default function handler(req, res) {
         con.query("Select * from persons",(err,data,field)=>{
             if(err) throw err;
             console.log(data)
+            res.status(200).json(data)
 
         })
         console.log("Connected!")
@@ -26,5 +27,4 @@ export default function handler(req, res) {
 
 
 
-    res.status(200).json({ name: 'John Doe' })
   }
